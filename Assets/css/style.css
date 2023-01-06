@@ -1,0 +1,186 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid lightslategray; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+  body {
+    background-color: black;
+    }
+  
+  h2 {
+    color: darkturquoise;
+    text-align: center;
+    }
+
+  h4 {
+    color: magenta;
+    text-align: center;
+  }
+   
+  .button {
+    display: block ;
+    margin: auto;
+    cursor: pointer;
+    font-size: 100%;
+    background-color: black;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: lime;
+    border: 2px;
+  }
+  
+  button :hover {
+    cursor: pointer;
+  }
+
+  /*Header*/
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: auto;
+  }
+
+  header p {
+    color: lime;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: right;
+  }
+
+  header #time {
+ 
+    font-size: medium;
+    font-weight: bold;
+    color: lime;
+  }
+
+  /*Main*/
+
+  main .container {
+    padding: 15px;
+    background-color: black;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+button:hover {
+  background-color: gray;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-buttons button {  
+  height: 50px;
+  width: 300px;
+  background-color: aqua;
+  color: black;
+  margin: 5px;
+  border-radius: 5px;
+ 
+}
+
+.answer{
+  display: flex;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.answer-buttons :hover{
+  cursor: pointer;
+  border: solid rgb(106, 179, 106) 2px;
+}
+
+input[type="text"] {
+  font-size: 100%;
+}
+
+.highscores{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-color: rgb(43, 116, 92);
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+}
+
+.highscores > *{
+  flex: 1; 
+}
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+}
+
+li:nth-child(odd) {
+  background-color: gray;
+}
+
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+}
+#return{
+  margin: 5px;
+}
+
+#reset{
+  margin: 5px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 120%;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: gray;
+  border-top: 2px solid #ccc;
+}
+
+.timer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#score{
+  color: lime;
+}
+
+  
+

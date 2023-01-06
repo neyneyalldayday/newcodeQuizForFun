@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JavaScript Quiz</title>
+        <link rel="stylesheet" href="./Assets/css/style.css">
+    </head>
+    
+    <body>
+        <!--header-->
+        <header>
+            <div id="highscores"><button id="check-scores" class="button">Check Highscores</button></div>
+            <div><p>Time: <span id="time">100</span></p></div>
+           
+        </header>    
+        <!--main-->
+        <main>
+        <section class="container">
+            <div class="start-quiz">
+                <h2>Test your JavaScript Knowledge!</h2>
+                <p></p>
+                <h4>Click below to start the quiz!</h4>
+                <button class="button" id="start-quiz">Start Quiz</button>
+            </div>
+                
+        <!--question and answer-->
+        <div class ="questions hide" >
+            <h2 id="question-display"></h2>
+            <div class="answer-buttons">
+                <button class="answer" id="answerA"></button>
+                <button class="answer" id="answerB"></button>
+                <button class="answer" id="answerC"></button>
+                <button class="answer" id="answerD"></button>
+            </div>
+            <br>
+            <div id="correct" class="feedback hide"></div>
+            <div id="incorrect" class="feedback hide"></div>
+        </div>                    
+
+        <!--quiz complete-->
+        <div class ="endscreen hide">
+            <h4>Quiz Complete!</h4>
+            <p>Your Score: <span id="score"></span></p>
+            <form id="scoreboard">
+                <p>Enter initials:</p> <input type="text" id="intials" max="3">
+                <button class="button" id="submit">Submit</button>
+            </form>
+        </div>
+        
+        <!--High Scores-->
+        <div class="highscores hide">
+            <h4>High Scores</h4>
+            <form id="score-form">
+                <ol id="scores"></ol>
+            <div id="score-buttons">
+                <button class="button" id="return">Return to Start</button>
+                <button class="button" id="reset">Reset High Scores</button>
+            </div>
+
+            </form>
+            
+        </div>
+        </section>
+        </main>
+
+        <script src="./Assets/js/script.js"></script>
+    </body>
+</html>
